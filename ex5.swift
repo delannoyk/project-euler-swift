@@ -9,7 +9,7 @@
 import Foundation
 
 func isNumber(number: Int, divisibleByEachNumbersUntil maxDivisor: Int) -> Bool {
-  for (var i = 2; i <= maxDivisor; i++) {
+  for (var i = (maxDivisor / 2) + 1; i <= maxDivisor; i++) {
     if number % i != 0 {
       return false
     }
